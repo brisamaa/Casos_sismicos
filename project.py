@@ -13,9 +13,11 @@ def download_data():
 download_data()
 data = pd.read_csv('data.csv', sep = ',')
 
-st.title('Sismos')
-st.write('Sismos')
-#st.dataframe(data.head(50))
-#magnitud = data['MAGNITUD']
+st.title('CASOS SÍSMICOS')
+st.write('Magnitud')
 st.line_chart(data, x = 'FECHA_UTC', y = 'MAGNITUD')
+print(data)
+
+st.write('Longitud')
+st.line_chart(data, x = 'FECHA_UTC', y = 'LONGITUD')
 print(data)
