@@ -1,6 +1,7 @@
 import streamlit as st
 import pandas as pd
 import gdown
+import numpy as np
 
 # id = 1AXNrSrH6BUVRo4tvUHIVfeuumEBjDCCR
 @st.experimental_memo
